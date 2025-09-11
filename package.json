@@ -5,7 +5,7 @@
 	"keywords": ["typescript", "typescript-config", "config", "code-styles", "roblox"],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/christopher-buss/typescript-config"
+		"url": "https://github.com/christopher-buss/tsconfig.git"
 	},
 	"license": "MIT",
 	"author": "Christopher Buss <christopher.buss@pm.me> (https://github.com/christopher-buss)",
