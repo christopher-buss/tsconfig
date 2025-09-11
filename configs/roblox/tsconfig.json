@@ -1,0 +1,96 @@
+{
+	"compilerOptions": {
+		/* Enable incremental compilation for faster subsequent builds. */
+		"incremental": true,
+
+		/* Specify file to store incremental compilation information. */
+		"tsBuildInfoFile": "out/tsconfig.tsbuildinfo",
+
+		/* Target ECMAScript version for generated code. */
+		"target": "esnext",
+
+		/* JSX compilation mode - generates React.createElement calls. */
+		"jsx": "react",
+
+		/* Custom JSX factory function to use instead of React.createElement. */
+		"jsxFactory": "React.createElement",
+
+		/* Custom JSX fragment factory function to use instead of React.Fragment. */
+		"jsxFragmentFactory": "React.Fragment",
+
+		/* Force TypeScript to consider all files as modules. */
+		"moduleDetection": "force",
+
+		/* Disable including default library files (lib.d.ts). */
+		"noLib": true,
+
+		/* Enable experimental support for decorators. */
+		"experimentalDecorators": true,
+
+		/* Base directory for resolving non-relative module names. */
+		"baseUrl": "src",
+
+		/* Root directory of input files. */
+		"rootDir": "src",
+
+		/* Specify module system for generated code. */
+		"module": "commonjs",
+
+		/* Module resolution strategy optimized for bundlers. */
+		"moduleResolution": "node",
+
+		/* Enable importing .json files. */
+		"resolveJsonModule": true,
+
+		/* Specify directories to search for type definitions. */
+		"typeRoots": ["node_modules/@rbxts"],
+
+		/* Enable all strict TypeScript checks. */
+		"strict": true,
+
+		/* Disallow unreachable code (code after return, throw, etc.). */
+		"allowUnreachableCode": false,
+
+		/* Interpret optional property types as written, rather than adding undefined. */
+		"exactOptionalPropertyTypes": true,
+
+		/* Report errors for fallthrough cases in switch statements. */
+		"noFallthroughCasesInSwitch": true,
+
+		/* Require override keyword for overridden methods. */
+		"noImplicitOverride": true,
+
+		/* Require explicit return in all branches of functions with return type. */
+		"noImplicitReturns": true,
+
+		/* Disallow property access through indexes without explicit declaration. */
+		"noPropertyAccessFromIndexSignature": true,
+
+		/* Make index checks stricter (may return undefined). */
+		"noUncheckedIndexedAccess": true,
+
+		/* Type catch clause variables as 'unknown' instead of 'any'. */
+		"useUnknownInCatchVariables": true,
+
+		/* Provide full support for iterables in for-of, spread, and destructuring. */
+		"downlevelIteration": true,
+
+		/* Specify output directory for generated files. */
+		"outDir": "./out/",
+
+		/* Allow default imports from modules with no default export. */
+		"allowSyntheticDefaultImports": true,
+
+		/* Enforce consistent casing in file names when importing. */
+		"forceConsistentCasingInFileNames": true,
+
+		/* Preserve exact import/export syntax without transformations. */
+		"verbatimModuleSyntax": true,
+
+		/* Skip type checking in library files (.d.ts). */
+		"skipLibCheck": true
+	},
+
+	/* Specify files or patterns to include in the compilation. */
+	"include": ["src/**/*.ts", "src/**/*.tsx"]
+}
