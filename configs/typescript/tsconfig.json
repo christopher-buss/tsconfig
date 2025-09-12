@@ -9,7 +9,7 @@
 		/* Force TypeScript to consider all files as modules. */
 		"moduleDetection": "force",
 
-		"baseUrl": ".",
+		"baseUrl": "${configDir}",
 
 		/* Specify module system for generated code. */
 		"module": "esnext",
@@ -79,5 +79,8 @@
 	},
 
 	/* Specify files or patterns to include in the compilation. */
-	"include": ["**/*/*.*"]
+	"include": ["${configDir}/**/*/*.*"],
+
+	/* Specify files or patterns to exclude from the compilation. */
+	"exclude": ["${configDir}/node_modules", "${configDir}/**/.*/"]
 }

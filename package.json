@@ -1,6 +1,6 @@
 {
 	"name": "@isentinel/tsconfig",
-	"version": "0.1.2",
+	"version": "1.0.0",
 	"description": "TypeScript shareable config",
 	"keywords": ["typescript", "typescript-config", "config", "code-styles", "roblox"],
 	"repository": {
@@ -15,6 +15,7 @@
 		"./roblox": "./configs/roblox/tsconfig.json",
 		"./typescript": "./configs/typescript/tsconfig.json"
 	},
+	"files": ["configs/"],
 	"scripts": {
 		"lint": "eslint --cache",
 		"lint:ci": "eslint --cache --cache-strategy content",
@@ -28,6 +29,7 @@
 		"@types/node": "^24.1.0",
 		"bumpp": "^10.2.3",
 		"eslint": "^9.31.0",
+		"eslint-plugin-n": "^17.21.3",
 		"jiti": "^2.5.0",
 		"simple-git-hooks": "^2.13.0",
 		"typescript": "^5.8.3"

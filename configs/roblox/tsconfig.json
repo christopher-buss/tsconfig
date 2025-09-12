@@ -4,7 +4,7 @@
 		"incremental": true,
 
 		/* Specify file to store incremental compilation information. */
-		"tsBuildInfoFile": "out/tsconfig.tsbuildinfo",
+		"tsBuildInfoFile": "${configDir}/out/tsconfig.tsbuildinfo",
 
 		/* Target ECMAScript version for generated code. */
 		"target": "esnext",
@@ -28,10 +28,10 @@
 		"experimentalDecorators": true,
 
 		/* Base directory for resolving non-relative module names. */
-		"baseUrl": "src",
+		"baseUrl": "${configDir}/src",
 
 		/* Root directory of input files. */
-		"rootDir": "src",
+		"rootDir": "${configDir}/src",
 
 		/* Specify module system for generated code. */
 		"module": "commonjs",
@@ -43,7 +43,7 @@
 		"resolveJsonModule": true,
 
 		/* Specify directories to search for type definitions. */
-		"typeRoots": ["node_modules/@rbxts"],
+		"typeRoots": ["${configDir}/node_modules/@rbxts"],
 
 		/* Enable all strict TypeScript checks. */
 		"strict": true,
@@ -76,7 +76,7 @@
 		"downlevelIteration": true,
 
 		/* Specify output directory for generated files. */
-		"outDir": "./out/",
+		"outDir": "${configDir}/out",
 
 		/* Allow default imports from modules with no default export. */
 		"allowSyntheticDefaultImports": true,
@@ -84,13 +84,13 @@
 		/* Enforce consistent casing in file names when importing. */
 		"forceConsistentCasingInFileNames": true,
 
-		/* Preserve exact import/export syntax without transformations. */
-		"verbatimModuleSyntax": true,
-
 		/* Skip type checking in library files (.d.ts). */
 		"skipLibCheck": true
 	},
 
 	/* Specify files or patterns to include in the compilation. */
-	"include": ["src/**/*.ts", "src/**/*.tsx"]
+	"include": ["${configDir}/**/*/*.ts", "${configDir}/**/*/*.tsx"],
+
+	/* Specify files or patterns to exclude from the compilation. */
+	"exclude": ["${configDir}/node_modules", "${configDir}/out", "${configDir}/**/.*/"]
 }
