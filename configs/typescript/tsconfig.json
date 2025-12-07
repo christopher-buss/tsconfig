@@ -9,13 +9,14 @@
 		/* Force TypeScript to consider all files as modules. */
 		"moduleDetection": "force",
 
-		"baseUrl": "${configDir}",
-
 		/* Specify module system for generated code. */
 		"module": "esnext",
 
 		/* Module resolution strategy optimized for bundlers. */
 		"moduleResolution": "bundler",
+
+		/* Base directory for resolving non-relative module names. */
+		"paths": { "${configDir}": ["./*"] },
 
 		/* Enable importing .json files. */
 		"resolveJsonModule": true,
