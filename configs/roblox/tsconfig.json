@@ -27,9 +27,6 @@
 		/* Enable experimental support for decorators. */
 		"experimentalDecorators": true,
 
-		/* Base directory for resolving non-relative module names. */
-		"baseUrl": "${configDir}/src",
-
 		/* Root directory of input files. */
 		"rootDir": "${configDir}/src",
 
@@ -38,6 +35,9 @@
 
 		/* Module resolution strategy optimized for bundlers. */
 		"moduleResolution": "node",
+
+		/* Base directory for resolving non-relative module names. */
+		"paths": { "${configDir}": ["${configDir}/src/*"] },
 
 		/* Enable importing .json files. */
 		"resolveJsonModule": true,
