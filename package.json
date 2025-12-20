@@ -1,6 +1,6 @@
 {
 	"name": "@isentinel/tsconfig",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "TypeScript shareable config",
 	"keywords": ["typescript", "typescript-config", "config", "code-styles", "roblox"],
 	"repository": {
