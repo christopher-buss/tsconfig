@@ -31,10 +31,10 @@
 		"rootDir": "${configDir}/src",
 
 		/* Specify module system for generated code. */
-		"module": "commonjs",
+		"module": "preserve",
 
 		/* Module resolution strategy optimized for bundlers. */
-		"moduleResolution": "node",
+		"moduleResolution": "bundler",
 
 		/* Base directory for resolving non-relative module names. */
 		"paths": { "*": ["${configDir}/src/*"] },
@@ -44,6 +44,9 @@
 
 		/* Specify directories to search for type definitions. */
 		"typeRoots": ["${configDir}/node_modules/@rbxts"],
+
+		/* Include types for roblox-ts APIs. */
+		"types": ["compiler-types"],
 
 		/* Enable all strict TypeScript checks. */
 		"strict": true,
@@ -72,11 +75,11 @@
 		/* Type catch clause variables as 'unknown' instead of 'any'. */
 		"useUnknownInCatchVariables": true,
 
-		/* Provide full support for iterables in for-of, spread, and destructuring. */
-		"downlevelIteration": true,
-
 		/* Specify output directory for generated files. */
 		"outDir": "${configDir}/out",
+
+		/* Enable source maps for generated code. */
+		"sourceMap": true,
 
 		/* Allow default imports from modules with no default export. */
 		"allowSyntheticDefaultImports": true,
