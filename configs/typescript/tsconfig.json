@@ -16,7 +16,7 @@
 		"moduleResolution": "bundler",
 
 		/* Base directory for resolving non-relative module names. */
-		"paths": { "${configDir}": ["./*"] },
+		"paths": { "*": ["${configDir}/*"] },
 
 		/* Enable importing .json files. */
 		"resolveJsonModule": true,

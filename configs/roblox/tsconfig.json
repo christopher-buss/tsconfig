@@ -37,7 +37,7 @@
 		"moduleResolution": "node",
 
 		/* Base directory for resolving non-relative module names. */
-		"paths": { "${configDir}": ["${configDir}/src/*"] },
+		"paths": { "*": ["${configDir}/src/*"] },
 
 		/* Enable importing .json files. */
 		"resolveJsonModule": true,
