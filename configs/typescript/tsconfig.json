@@ -10,7 +10,7 @@
 		"moduleDetection": "force",
 
 		/* Specify module system for generated code. */
-		"module": "esnext",
+		"module": "preserve",
 
 		/* Module resolution strategy optimized for bundlers. */
 		"moduleResolution": "bundler",
@@ -33,11 +33,11 @@
 		/* Enable all strict TypeScript checks. */
 		"strict": true,
 
-		/* Enable strict null and undefined checking. */
-		"strictNullChecks": true,
-
 		/* Disallow unreachable code (code after return, throw, etc.). */
 		"allowUnreachableCode": false,
+
+		/* Interpret optional property types as written, rather than adding undefined. */
+		"exactOptionalPropertyTypes": true,
 
 		/* Report errors for fallthrough cases in switch statements. */
 		"noFallthroughCasesInSwitch": true,
@@ -62,12 +62,6 @@
 
 		/* Disable generation of output files (type checking only). */
 		"noEmit": true,
-
-		/* Enable compatibility with CommonJS modules when using ES6 imports. */
-		"esModuleInterop": true,
-
-		/* Enforce consistent casing in file names when importing. */
-		"forceConsistentCasingInFileNames": true,
 
 		/* Transpile each file as a separate module. */
 		"isolatedModules": true,

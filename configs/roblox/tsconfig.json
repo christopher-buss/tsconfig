@@ -72,9 +72,6 @@
 		/* Make index checks stricter (may return undefined). */
 		"noUncheckedIndexedAccess": true,
 
-		/* Type catch clause variables as 'unknown' instead of 'any'. */
-		"useUnknownInCatchVariables": true,
-
 		/* Specify output directory for generated files. */
 		"outDir": "${configDir}/out",
 
