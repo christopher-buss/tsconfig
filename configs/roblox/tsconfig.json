@@ -89,7 +89,7 @@
 	},
 
 	/* Specify files or patterns to include in the compilation. */
-	"include": ["${configDir}/**/*/*.ts", "${configDir}/**/*/*.tsx"],
+	"include": ["${configDir}/**/*.ts", "${configDir}/**/*.tsx"],
 
 	/* Specify files or patterns to exclude from the compilation. */
 	"exclude": ["${configDir}/node_modules", "${configDir}/out", "${configDir}/**/.*/"]
