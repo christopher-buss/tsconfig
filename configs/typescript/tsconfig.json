@@ -24,6 +24,9 @@
 		/* Include types for Node.js APIs. */
 		"types": ["node"],
 
+		/* Allow import specifiers to include TypeScript file extensions. */
+		"allowImportingTsExtensions": true,
+
 		/* Allow importing JavaScript files in TypeScript project. */
 		"allowJs": true,
 
