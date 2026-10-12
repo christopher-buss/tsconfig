@@ -15,9 +15,6 @@
 		/* Module resolution strategy optimized for bundlers. */
 		"moduleResolution": "bundler",
 
-		/* Base directory for resolving non-relative module names. */
-		"paths": { "*": ["${configDir}/*"] },
-
 		/* Enable importing .json files. */
 		"resolveJsonModule": true,
 
@@ -26,9 +23,6 @@
 
 		/* Allow import specifiers to include TypeScript file extensions. */
 		"allowImportingTsExtensions": true,
-
-		/* Allow importing JavaScript files in TypeScript project. */
-		"allowJs": true,
 
 		/* Enable all strict TypeScript checks. */
 		"strict": true,
@@ -62,6 +56,12 @@
 
 		/* Disable generation of output files (type checking only). */
 		"noEmit": true,
+
+		/* Generate .d.ts files when emitting (required by isolatedDeclarations). */
+		"declaration": true,
+
+		/* Require explicit types on exports so .d.ts files emit without type inference. */
+		"isolatedDeclarations": true,
 
 		/* Transpile each file as a separate module. */
 		"isolatedModules": true,
